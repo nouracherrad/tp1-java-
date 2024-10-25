@@ -1,13 +1,14 @@
 # tp1-java-
 
+## Introduction
 This repository contains four Java exercises designed to demonstrate various programming concepts, such as string manipulation, array operations, and conjugation of verbs. Each exercise is structured in a separate class, and they offer useful functionalities for learning Java.
 
-Table of Contents
-Exercise 1 - Managing Student Grades
-Exercise 2 - Conjugating French Verbs
-Exercise 3 - String Operations
-Exercise 4 - Counting Letter Occurrences
-Exercise 1 - Managing Student Grades
+##Table of Contents
+[Exercise 1 ]: Managing Student Grades (#Exercise 1)
+[Exercise 2] : Conjugating French Verbs(#Exercise 2)
+[Exercise 3 ]: String Operations(#Exercise 3)
+[Exercise 4] : Counting Letter Occurrences(#Exercise 4)
+Exercise 1 : Managing Student Grades
 Class Name: Gerernote
 
 This exercise provides a program to manage student grades, including:
