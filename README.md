@@ -1,41 +1,111 @@
-# tp1-java-
+# LAP1 poo java
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Exercise 1: Student Grades Management](#exercise-1-student-grades-management)
+   - [Class: `gerernote`](#class-gerernote)
+3. [Exercise 2: Verb Conjugation](#exercise-2-verb-conjugation)
+   - [Class: `conjugaison`](#class-conjugaison)
+4. [Exercise 3: String Operations](#exercise-3-string-operations)
+   - [Class: `operationSurChaine`](#class-operationsurchaine)
+5. [Exercise 4: Letter Occurrences](#exercise-4-letter-occurrences)
+   - [Class: `OccurrenceLettres`](#class-occurrencelettres)
+6. [Conclusion](#conclusion)
 
 ## Introduction
-This repository contains a collection of Java programs that demonstrate various operations on strings, arrays, and student grades. Each exercise is structured in a dedicated folder, with classes to handle core functionalities and a `Main` class for testing. These projects showcase fundamental programming concepts such as loops, conditions, arrays, and string manipulations.
+This document outlines the implementation of various Java programs designed to perform specific operations related to student grades and string manipulations. Each program is structured in a class format, with distinct methods that encapsulate the functionalities required for the exercises.
 
-## Exercises
+## Exercise 1: Student Grades Management
 
-### Exercise 1:  Grade Management
-This program manages student grades by offering several operations, including sorting grades, calculating the average grade, identifying the highest and lowest grades, and counting students with a particular grade.
+### Class: `gerernote`
 
-- **Classes**:
-  - `gerernote`: Contains methods for sorting grades, calculating average, finding max/min grades, and counting students.
-  - `Main`: Used for testing the `gerernote` functionalities with sample grades.
+This class is responsible for managing student grades. It contains methods to sort grades, calculate the average grade, find the maximum and minimum grades, and count the number of  grades entered by the user.
 
-### Exercise 2: Conjugation of First-Group Verbs
-This program reads a French verb of the first group (ending in "-er") and conjugates it in the present tense.
+#### Methods:
+1. **`trierAfficher(float[] tab)`**: 
+   - This method accepts an array of grades, sorts it in ascending order using `Arrays.sort()`, and returns the sorted array.
+   
+2. **`noteMoy(float[] tab)`**: 
+   - It calculates and returns the average grade by summing all the grades in the array and dividing the sum by the number of grades.
 
-- **Classes**:
-  - `conjugaison`: Contains a method to conjugate verbs in the present tense.
-  - `Main`: Used for testing the `conjugaison` class by reading a verb and displaying its conjugation.
+3. **`affichermax(float[] tab)`**: 
+   - This method iterates through the grades to find and return the maximum grade in the array.
 
-### Exercise 3: String Operations
-This program performs a set of operations on a user-inputted string. The user can choose to display the string, reverse it, count the number of words, or enter a new string.
+4. **`affichermin(float[] tab)`**: 
+   - Similar to `affichermax`, this method identifies and returns the minimum grade in the array.
 
-- **Classes**:
-  - `operationSurChaine`: Contains methods to input, display, reverse the string, and count words.
-  - `Main`: Used to provide a menu for selecting and testing each string operation.
+5. **`nbrEtudiant(float[] tab)`**: 
+   - It counts and returns the number of students who have non-zero grades entered in the array.
 
-### Exercise 4: Character Occurrence Counter
-This program counts the occurrences of each letter in a string inputted by the user, ignoring case sensitivity, and displays only letters that appear at least once.
+### Class: `Main`
 
-- **Classes**:
-  - `OccurrenceLettres`: Contains a method to count and display letter occurrences.
-  - `Main`: Used for testing `OccurrenceLettres` by inputting a string and viewing the results.
+This is the main class where the program execution starts. It prompts the user to enter grades, invokes the methods from the `gerernote` class to perform operations on the grades, and displays the results.
+
+
+
+## Exercise 2: Verb Conjugation
+
+### Class: `conjugaison`
+
+This class is designed to handle the conjugation of regular French verbs of the first group (ending in "er"). It includes a method to conjugate the verb in the present tense.
+
+#### Method:
+1. **`conjuguer(String verbe)`**: 
+   - This method checks if the entered verb ends with "er". If it does, it removes the "er" ending and constructs the present tense conjugation, displaying it for all pronouns. If the verb does not end with "er", it informs the user that the verb is not a first-group verb.
+
+### Class: `Main`
+
+In this class, the user is prompted to input a verb. The conjugation method from the `conjugaison` class is then called to display the present tense forms of the verb.
+
+
+
+## Exercise 3: String Operations
+
+### Class: `operationSurChaine`
+
+This class provides various operations on a user-input string, including input, display, reversal, and word counting.
+
+#### Methods:
+1. **`saisir()`**: 
+   - This method prompts the user to enter a string and stores it in the class variable. It confirms that the string has been successfully stored.
+
+2. **`afficher()`**: 
+   - It displays the currently stored string. If no string has been entered, it notifies the user accordingly.
+
+3. **`inverser()`**: 
+   - This method reverses the string and displays the reversed version. If no string is stored, it informs the user.
+
+4. **`nbrMots()`**: 
+   - It counts and returns the number of words in the string, treating spaces as separators. The method handles multiple consecutive spaces appropriately.
+
+### Class: `Main`
+
+This is the entry point of the program, providing a menu for the user to choose different string operations. Based on the user’s selection, it calls the appropriate methods from the `operationSurChaine` class and displays results.
+
+
+
+## Exercise 4: Letter Occurrences
+
+### Class: `OccurrenceLettres`
+
+This class is designed to count the occurrences of each letter of the alphabet in a user-provided string, ignoring case differences.
+
+#### Method:
+1. **`compterOccurrences(String ch)`**: 
+   - This method converts the input string to uppercase to ensure that letter case does not affect the count. It initializes an array to store the occurrences of each letter (from 'A' to 'Z'). It iterates through the string, updating the count for each letter found. Finally, it displays the count of each letter that appears at least once.
+
+### Class: `Main`
+
+In this class, the user is prompted to enter a line of text. The letter occurrence counting method from the `OccurrenceLettres` class is then called to display the occurrences of each letter in the input.
+
 
 ## Conclusion
-These exercises illustrate practical applications of Java programming skills, especially focusing on string manipulation, arrays, and control structures. Each exercise provides a specific functionality, making the code modular and reusable. The repository structure facilitates easy navigation and testing for each individual program.
 
----
+The Java programs developed serve distinct purposes in managing student grades and performing string operations. Each program is structured into well-defined classes and methods, promoting modularity and reusability. This approach enhances the clarity and maintainability of the code.
 
-Thank you for exploring this project! Contributions and feedback are always welcome.
+
+
+
+
+
+
