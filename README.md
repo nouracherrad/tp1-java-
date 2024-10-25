@@ -36,5 +36,3 @@ This program reads a string and counts the occurrences of each letter (A-Z) in a
 
 Usage
 To execute each exercise, navigate to the class of interest and run its main method. Each class contains specific methods for the operations listed above.
-
-Add this README.md to your repository, and you’ll be set! Let me know if you need any other details.
