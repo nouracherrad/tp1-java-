@@ -1,39 +1,41 @@
 # tp1-java-
 
 ## Introduction
-This repository contains four Java exercises designed to demonstrate various programming concepts, such as string manipulation, array operations, and conjugation of verbs. Each exercise is structured in a separate class, and they offer useful functionalities for learning Java.
+This repository contains a collection of Java programs that demonstrate various operations on strings, arrays, and student grades. Each exercise is structured in a dedicated folder, with classes to handle core functionalities and a `Main` class for testing. These projects showcase fundamental programming concepts such as loops, conditions, arrays, and string manipulations.
 
-##Table of Contents
-[Exercise 1 ]: Managing Student Grades (#Exercise 1)
-[Exercise 2] : Conjugating French Verbs(#Exercise 2)
-[Exercise 3 ]: String Operations(#Exercise 3)
-[Exercise 4] : Counting Letter Occurrences(#Exercise 4)
-Exercise 1 : Managing Student Grades
-Class Name: Gerernote
+## Exercises
 
-This exercise provides a program to manage student grades, including:
+### Exercise 1:  Grade Management
+This program manages student grades by offering several operations, including sorting grades, calculating the average grade, identifying the highest and lowest grades, and counting students with a particular grade.
 
-Sorting and displaying the grades.
-Calculating the average grade.
-Finding the minimum and maximum grades.
-Counting students with non-zero grades.
-Exercise 2 - Conjugating French Verbs
-Class Name: Conjugaison
+- **Classes**:
+  - `gerernote`: Contains methods for sorting grades, calculating average, finding max/min grades, and counting students.
+  - `Main`: Used for testing the `gerernote` functionalities with sample grades.
 
-In this exercise, the program reads a regular first-group French verb (ending in "er") and displays its conjugation in the present tense. The program verifies the verb’s ending and handles the conjugation rules.
+### Exercise 2: Conjugation of First-Group Verbs
+This program reads a French verb of the first group (ending in "-er") and conjugates it in the present tense.
 
-Exercise 3 - String Operations
-Class Name: OperationSurChaine
+- **Classes**:
+  - `conjugaison`: Contains a method to conjugate verbs in the present tense.
+  - `Main`: Used for testing the `conjugaison` class by reading a verb and displaying its conjugation.
 
-This program offers several operations on a user-input string, including:
+### Exercise 3: String Operations
+This program performs a set of operations on a user-inputted string. The user can choose to display the string, reverse it, count the number of words, or enter a new string.
 
-Displaying the string.
-Reversing the string.
-Counting the number of words in the string (using whitespace as the delimiter).
-Exercise 4 - Counting Letter Occurrences
-Class Name: OccurrenceLettres
+- **Classes**:
+  - `operationSurChaine`: Contains methods to input, display, reverse the string, and count words.
+  - `Main`: Used to provide a menu for selecting and testing each string operation.
 
-This program reads a string and counts the occurrences of each letter (A-Z) in a case-insensitive manner. Only letters that appear at least once are displayed.
+### Exercise 4: Character Occurrence Counter
+This program counts the occurrences of each letter in a string inputted by the user, ignoring case sensitivity, and displays only letters that appear at least once.
 
-Usage
-To execute each exercise, navigate to the class of interest and run its main method. Each class contains specific methods for the operations listed above.
+- **Classes**:
+  - `OccurrenceLettres`: Contains a method to count and display letter occurrences.
+  - `Main`: Used for testing `OccurrenceLettres` by inputting a string and viewing the results.
+
+## Conclusion
+These exercises illustrate practical applications of Java programming skills, especially focusing on string manipulation, arrays, and control structures. Each exercise provides a specific functionality, making the code modular and reusable. The repository structure facilitates easy navigation and testing for each individual program.
+
+---
+
+Thank you for exploring this project! Contributions and feedback are always welcome.
