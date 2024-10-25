@@ -1,8 +1,5 @@
 # tp1-java-
 
-Pour un bon fichier README, vous pouvez inclure une brève introduction au projet, une explication de chaque exercice, et les noms des classes principales. Voici un exemple de structure de README pour votre dépôt :
-
-Student Exercises Project
 This repository contains four Java exercises designed to demonstrate various programming concepts, such as string manipulation, array operations, and conjugation of verbs. Each exercise is structured in a separate class, and they offer useful functionalities for learning Java.
 
 Table of Contents
