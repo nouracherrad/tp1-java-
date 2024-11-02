@@ -1,4 +1,4 @@
-# LAP1 poo java
+# LAB 1 poo java
 
 ## Table of Contents
 1. [Introduction](#introduction)
